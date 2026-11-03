@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// Function to add two matrices
+
 void addMatrices(int rows, int cols, int matrix1[][10], int matrix2[][10], int result[][10]) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -11,7 +11,7 @@ void addMatrices(int rows, int cols, int matrix1[][10], int matrix2[][10], int r
     }
 }
 
-// Function to subtract two matrices
+
 void subtractMatrices(int rows, int cols, int matrix1[][10], int matrix2[][10], int result[][10]) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -20,7 +20,7 @@ void subtractMatrices(int rows, int cols, int matrix1[][10], int matrix2[][10], 
     }
 }
 
-// Function to multiply two matrices
+
 void multiplyMatrices(int rows1, int cols1, int matrix1[][10], int rows2, int cols2, int matrix2[][10], int result[][10]) {
     for (int i = 0; i < rows1; i++) {
         for (int j = 0; j < cols2; j++) {
@@ -32,7 +32,7 @@ void multiplyMatrices(int rows1, int cols1, int matrix1[][10], int rows2, int co
     }
 }
 
-// Function to transpose a matrix
+
 void transposeMatrix(int rows, int cols, int matrix[][10], int result[][10]) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -41,7 +41,7 @@ void transposeMatrix(int rows, int cols, int matrix[][10], int result[][10]) {
     }
 }
 
-// Function to display a matrix
+
 void displayMatrix(int rows, int cols, int matrix[][10]) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -56,7 +56,7 @@ int main() {
     int rows1, cols1, rows2, cols2;
     int choice;
 
-    // Input for first matrix
+    
     cout << "Enter the number of rows and columns for Matrix 1: ";
     cin >> rows1 >> cols1;
     cout << "Enter the elements of Matrix 1:\n";
@@ -66,7 +66,7 @@ int main() {
         }
     }
 
-    // Input for second matrix
+   
     cout << "Enter the number of rows and columns for Matrix 2: ";
     cin >> rows2 >> cols2;
     cout << "Enter the elements of Matrix 2:\n";
@@ -76,7 +76,7 @@ int main() {
         }
     }
 
-    // Menu-driven switch case
+   
     cout << "\nSelect operation to perform: \n";
     cout << "1. Add Matrices\n2. Subtract Matrices\n3. Multiply Matrices\n4. Transpose Matrix 1\n5. Transpose Matrix 2\n";
     cout << "Enter your choice: ";
